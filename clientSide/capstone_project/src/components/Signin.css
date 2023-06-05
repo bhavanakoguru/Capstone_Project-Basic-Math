@@ -1,0 +1,49 @@
+.maindiv
+{
+    display: flex;
+    
+
+}
+.top
+{
+    background-image:url("../../public/Math1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 750px; 
+}
+#lasttext
+{
+    margin-left: 750px;
+    margin-top: 50px;
+}
+#gomidh1
+{
+    margin: auto;
+    border: 1px solid rgb(229, 156, 156);
+    border-radius: 5px;
+}
+.maininput
+{
+    /* border: 1px solid rgb(54, 39, 223); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 50px;
+    padding-left: 130px;
+    padding-right: 100px;
+    border-radius: 5px;
+    margin-left: 750px;
+}
+.signuptext
+{
+    margin-left: 40px;
+}
+.inputwidth
+{
+    padding: 10px;
+}
+
+.gomid
+{
+    margin-left: 70px ;
+}
