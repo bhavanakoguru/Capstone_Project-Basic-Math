@@ -1,15 +1,13 @@
 .maindiv
 {
     display: flex;
-    
-
 }
 .top
 {
     background-image:url("../../public/Math1.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 750px; 
+    height: 950px; 
 }
 #lasttext
 {
@@ -24,7 +22,6 @@
 }
 .maininput
 {
-    /* border: 1px solid rgb(54, 39, 223); */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: auto;
     margin-top: 200px;

@@ -1,50 +1,49 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Signin.css"
-import { useState } from "react";
-function DisplaySignin()
+function DisplaySignin({islogin,setIslogin})
 {
-
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState(""); 
-    
+    let results=JSON.parse(localStorage.getItem("studentdata")); 
     function clickMe()
     {
-        let res=JSON.parse(localStorage.getItem("studentsignindata")) || [];
-       // let results=JSON.parse(localStorage.getItem("studentdata"));
-        if(username!=="" && password!=="")
-        {
-            localStorage.setItem("studentsignindata",JSON.stringify([...res,{username,password}])); 
-            // for(let i=0;i<results.length;i++)
-            // {
-            //     if(results[i].username===username || results[i].password===password)
-            //     {
-            //         alert("Signin Successfull");
-            //     }
-            //     else
-            //     {
-            //         alert("Signin failed");
-            //     }
-            // }
-            
-        }
-        else
+        if(username==="" && password==="")
         {
             alert("Please fill the details");
+            return;
         }
+        for(let i=0;i<results.length;i++)
+        {
+            if(results[i].user===username || results[i].password===password)
+            {
+                alert("Signin Successfull");
+                setIslogin(false);
+                localStorage.setItem("studentsignindata",JSON.stringify(results[i]));
+                return;
+            }
+
+        }
+        alert("Signin failed");       
     }
-    
-    return <div className="top">
+    const handleSignupClick = () => {
+        setIslogin(false);
+    }
+
+    return <div className="supertop">
+    <div className="top">
     <div className="maindiv">
         <div className="maininput">
             <h3 className="signuptext">Signin page</h3><br />
-             <input type={"text"} className="inputwidth user" placeholder="User Name" onChange={e => setUsername(e.target.value)}></input><br /><br />
+            <input type={"text"} className="inputwidth user" placeholder="User Name" onChange={e => setUsername(e.target.value)}></input><br /><br />
             <input type={"password"} className="inputwidth password" placeholder="Password" onChange={e => setPassword(e.target.value)}></input><br /><br />
             <button className="inputwidth gomid" onClick={clickMe}>Submit</button><br />
-            <p>if don't have an Account?<a href="Signin.js">Signup</a></p><br />
+            <p>if don't have an Account?<span onClick={handleSignupClick}><u>Signup</u></span></p>
+            {/* <p>*<span onClick={handleSignupClick}>ForgotPassword</span></p>
+            <p>*<span onClick={handleSignupClick}>ForgotUserName</span></p> */}
         </div>
     </div>
             <p id="lasttext">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
     </div>
-    
+    </div> 
 }
-export default DisplaySignin
+export default DisplaySignin;
