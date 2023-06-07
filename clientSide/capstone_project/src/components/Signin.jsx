@@ -1,13 +1,16 @@
 import React,{useState} from "react";
+import DisplayForgot from "./Forgotpassword";
+import Displayhome from "./Homepage";
 import "./Signin.css"
-function DisplaySignin({islogin,setIslogin})
+function DisplaySignin({islogin,setIslogin,setForgotpassword,setForgotusername})
 {
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState(""); 
-    let results=JSON.parse(localStorage.getItem("studentdata")); 
+    let results=JSON.parse(localStorage.getItem("studentdata"));
+    
     function clickMe()
-    {
-        if(username==="" && password==="")
+    {	
+       if(username==="" && password==="")
         {
             alert("Please fill the details");
             return;
@@ -17,7 +20,7 @@ function DisplaySignin({islogin,setIslogin})
             if(results[i].user===username || results[i].password===password)
             {
                 alert("Signin Successfull");
-                setIslogin(false);
+                islogin(false);
                 localStorage.setItem("studentsignindata",JSON.stringify(results[i]));
                 return;
             }
@@ -29,6 +32,13 @@ function DisplaySignin({islogin,setIslogin})
         setIslogin(false);
     }
 
+    const handleForgotClick = () => {
+        setForgotpassword(true);
+    }
+    const handleForgotUserClick=() =>
+    {
+        setForgotusername(true);
+    }
     return <div className="supertop">
     <div className="top">
     <div className="maindiv">
@@ -38,8 +48,8 @@ function DisplaySignin({islogin,setIslogin})
             <input type={"password"} className="inputwidth password" placeholder="Password" onChange={e => setPassword(e.target.value)}></input><br /><br />
             <button className="inputwidth gomid" onClick={clickMe}>Submit</button><br />
             <p>if don't have an Account?<span onClick={handleSignupClick}><u>Signup</u></span></p>
-            {/* <p>*<span onClick={handleSignupClick}>ForgotPassword</span></p>
-            <p>*<span onClick={handleSignupClick}>ForgotUserName</span></p> */}
+             <p>*<span onClick={handleForgotClick}>ForgotPassword</span></p>
+             <p>*<span onClick={handleForgotUserClick}>ForgotUserName</span></p>  
         </div>
     </div>
             <p id="lasttext">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>

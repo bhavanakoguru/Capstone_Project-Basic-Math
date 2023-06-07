@@ -7,6 +7,7 @@ function DisplaySignup({islogin,setIslogin})
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [number, setNumber] = useState("");
+      
     function btnClick()
     {
         let results=JSON.parse(localStorage.getItem("studentdata")) || [];

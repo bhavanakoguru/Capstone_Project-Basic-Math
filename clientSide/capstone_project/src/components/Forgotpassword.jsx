@@ -1,17 +1,15 @@
 import React,{useState} from "react";
 import "./Forgotpassword.css"
+import Displayhome from "./Homepage";
 
-function DisplayForgot()
+function DisplayForgot({setIsforgotpassword})
 {
-
-
     const [newpassword,setNewpassword]=useState("");
     const [confirmpassword,setConfirmpassword]=useState(""); 
     let results=JSON.parse(localStorage.getItem("studentdata")); 
-    
-    function clickMe()
+     
+	function clickMe()
 		{
-		
 			if(newpassword ==="" || confirmpassword ==="" )
 			{
 				alert("please enter details correctly");
