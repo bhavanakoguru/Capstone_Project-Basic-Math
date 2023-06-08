@@ -1,13 +1,10 @@
 import React,{useState} from "react";
-import DisplayForgot from "./Forgotpassword";
-import Displayhome from "./Homepage";
 import "./Signin.css"
-function DisplaySignin({islogin,setIslogin,setForgotpassword,setForgotusername})
+function DisplaySignin({setHomepage,islogin,setIslogin,setForgotpassword,setForgotusername})
 {
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState(""); 
     let results=JSON.parse(localStorage.getItem("studentdata"));
-    
     function clickMe()
     {	
        if(username==="" && password==="")
@@ -20,7 +17,8 @@ function DisplaySignin({islogin,setIslogin,setForgotpassword,setForgotusername})
             if(results[i].user===username || results[i].password===password)
             {
                 alert("Signin Successfull");
-                islogin(false);
+                //setIslogin(false);
+                setHomepage(true);
                 localStorage.setItem("studentsignindata",JSON.stringify(results[i]));
                 return;
             }

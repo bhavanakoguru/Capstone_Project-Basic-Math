@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import "./Forgotpassword.css"
 
-function DisplayForgotusername()
+function DisplayForgotusername({forgotusername, setForgotusername,forgotpassword, setForgotpassword})
 {
     const [newusername,setNewusername]=useState("");
     const [confirmusername,setConfirmusername]=useState(""); 
@@ -36,6 +36,8 @@ function DisplayForgotusername()
 				}
 				localStorage.setItem("studentdata",JSON.stringify(arr));
 				alert("username changed Successfully");
+				setForgotusername(false);
+				//setForgotpassword(false);
 				return;
 			}
 			else

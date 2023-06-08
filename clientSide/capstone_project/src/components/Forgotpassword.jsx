@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 import "./Forgotpassword.css"
-import Displayhome from "./Homepage";
+//import Displayhome from "./Homepage";
 
-function DisplayForgot({setIsforgotpassword})
+function DisplayForgot({forgotpassword, setForgotpassword,islogin, setIslogin})
 {
     const [newpassword,setNewpassword]=useState("");
     const [confirmpassword,setConfirmpassword]=useState(""); 
@@ -39,6 +39,8 @@ function DisplayForgot({setIsforgotpassword})
 				}
 				localStorage.setItem("studentdata",JSON.stringify(arr));
 				alert("password changed Successfully");
+				setForgotpassword(false);
+				//setIslogin(true);
 				return;
 			}
 			else
