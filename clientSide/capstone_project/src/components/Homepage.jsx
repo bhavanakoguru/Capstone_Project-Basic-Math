@@ -56,6 +56,8 @@ function Displayhome()
                     <img src="/resources/mathsimage1.png" alt="mathsimage" className="middledivimg"/>
                 </div>
             </div>
+
+         
             <footer>
                 <div className="firstbox">
                         <h4 className="headinfooter">View Meterial</h4>
@@ -66,7 +68,6 @@ function Displayhome()
                 <div>
                         <h3>"Learn with joy" emphasizes the idea that learning should be a positive and enjoyable experience. When we approach learning with a sense of joy and enthusiasm, it can enhance our motivation, engagement, and retention of knowledge.</h3>
                         <p className="paratext2">When you love learning,<br /> you will naturally find joy in every step of the process.</p>
-           
                 </div>
                 <hr/>
                 <div className="firstbox1">
