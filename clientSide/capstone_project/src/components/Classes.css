@@ -1,4 +1,4 @@
-/*......NavBAR......*/
+/*..........NAVBAR.........*/
 .navbar{
     display: flex;
     border: 1px solid rgb(3, 3, 3);
@@ -26,7 +26,7 @@
     height: 60px;
     border-radius: 50px;
 }
-/*........FOOTER...........*/
+/*..........FOOTER.........*/
 footer
 {
     width: 100%;
@@ -75,28 +75,66 @@ footer
     border: 1px solid white;
     border-radius: 10px;
 }
+
 .socialicons
 {
  margin: 50px;
  margin-left: 400px;  
 }
-/*...............VIEWMETERIALPAGE...........*/
-.imagedata
+/*..........CLASSESPAGE.........*/
+.mainpage
 {
     display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
 }
-.image
+.leftsidepart
 {
+    width: 450px;
     border: 1px solid black;
-    margin: 30px;
-    width: 250px;
-    height: 200px;
 }
-.subimg
+.unitbox
 {
-    border:1px solid black;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: rgb(43, 47, 47);
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+.rightsidepart
+{
+    margin: 5px;
+    width: 100%;
+    border: 2px solid rgb(17, 15, 16);
+}
+.pre-text
+{
+    border: 2px solid black;
+    margin-left: 50px;
+    width: 90%;
+    margin: auto;
+    height: 470px;
+    margin-bottom: 5px;
+}
+.firsttext
+{
+    /* margin-left: 50px; */
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+.btn
+{
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
     text-align: center;
-    margin: 10px;
+    background-color: aqua;
+    color: black;
+    margin: 5px 200px 5px 200px;
+    
+}
+.vediotag
+{
+    margin-left: 50px;
+    width: 1000px;
 }

@@ -37,7 +37,8 @@ function DisplaySignin({setHomepage,islogin,setIslogin,setForgotpassword,setForg
     {
         setForgotusername(true);
     }
-    return <div className="supertop">
+    return (
+    <div className="supertop">
     <div className="top">
     <div className="maindiv">
         <div className="maininput">
@@ -52,6 +53,6 @@ function DisplaySignin({setHomepage,islogin,setIslogin,setForgotpassword,setForg
     </div>
             <p id="lasttext">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
     </div>
-    </div> 
+    </div> );
 }
 export default DisplaySignin;

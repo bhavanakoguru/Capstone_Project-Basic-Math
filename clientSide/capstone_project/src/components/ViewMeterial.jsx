@@ -4,6 +4,7 @@ function DisplayViewpage()
 {
     return(
     <div className="mainclass">
+        {/* .......NAVBAR........ */}
         <nav className="navbar">
                 <img src={"/resources/educateLogo.png"} alt="logo" className="logo"/>
                 <div class="divtag">
@@ -14,6 +15,7 @@ function DisplayViewpage()
                 </div>
             </nav>
     <br></br><br></br><br></br><br></br><br></br>
+        {/* .........VIEWMATERIAL......... */}
         <div className="imagedata">
                 <div className="subimg">
                     <img src="/resources/RealNumbers.jpeg" alt="realnumbers" className="image"/><hr></hr>
@@ -72,6 +74,7 @@ function DisplayViewpage()
                     <h3>Statistics</h3>
                 </div>
             </div>
+            {/* ..........FOOTER ..........*/}
         <footer>
                 <div className="firstbox">
                         <h4 className="headinfooter">View Meterial</h4>
@@ -82,7 +85,6 @@ function DisplayViewpage()
                 <div>
                         <h3>"Learn with joy" emphasizes the idea that learning should be a positive and enjoyable experience. When we approach learning with a sense of joy and enthusiasm, it can enhance our motivation, engagement, and retention of knowledge.</h3>
                         <p className="paratext2">When you love learning,<br /> you will naturally find joy in every step of the process.</p>
-           
                 </div>
                 <hr/>
                 <div className="firstbox1">
@@ -97,7 +99,7 @@ function DisplayViewpage()
                         <img src="/resources/what'sapplogo.png" alt="whatsapp" className="logo1"/>
                     </div>
                 </div>
-            </footer>
+        </footer>
     </div>
     );
 }
