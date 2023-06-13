@@ -81,35 +81,8 @@ footer
  margin: 50px;
  margin-left: 400px;  
 }
-/*..........CLASSESPAGE.........*/
-.mainpage
-{
-    display: flex;
-}
-.leftsidepart
-{
-    width: 450px;
-    border: 1px solid black;
-}
-.unitbox
-{
-    margin-bottom: 5px;
-    padding: 3px;
-    background-color: rgb(43, 47, 47);
-    color: white;
-    border-radius: 5px;
-    margin: 5px;
-}
-.rightsidepart
-{
-    margin: 5px;
-    width: 100%;
-    border: 2px solid rgb(17, 15, 16);
-}
-.subtopics
-{
-    margin-left: 100px;
-}
+/* ........ExamPage....... */
+
 .firsttext
 {
     /* margin-left: 50px; */
@@ -127,9 +100,4 @@ footer
     color: black;
     margin: 5px 200px 5px 200px;
     
-}
-.vediotag
-{
-    margin-left: 50px;
-    width: 1000px;
 }

@@ -19,7 +19,8 @@ function DisplayViewpage()
         <div className="imagedata">
                 <div className="subimg">
                     <img src="/resources/RealNumbers.jpeg" alt="realnumbers" className="image"/><hr></hr>
-                    <h3>Real Numbers</h3>
+                    <h3><a href="https://docs.google.com/document/d/18d15DKJ_9amUmN41474PhzWTMvV4HV5gzjYypyP7Ww4/edit?usp=sharing">Real Numbers</a></h3>
+                    {/* <h3>Real Numbers</h3> */}
                 </div>
                 <div className="subimg">
                     <img src="/resources/Sets.png" alt="sets" className="image"/><hr></hr>
