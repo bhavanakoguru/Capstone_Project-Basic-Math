@@ -89,6 +89,7 @@ footer
 .leftsidepart
 {
     width: 450px;
+    height: 990px;
     border: 1px solid black;
 }
 .unitbox
@@ -104,29 +105,112 @@ footer
 {
     margin: 5px;
     width: 100%;
-    border: 2px solid rgb(17, 15, 16);
+    margin-left: 10px;
+}
+.heads
+{
+    margin-left: 50px;
 }
 .subtopics
 {
     margin-left: 100px;
 }
+.pre-text
+{
+    margin-top: 50px; 
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
 .firsttext
 {
-    /* margin-left: 50px; */
-    width: 90%;
-    height: 400px;
+    margin:10px; 
+    width: 80%;
+    height: 300px;
     margin: auto;
+    margin-top: 10px;
     border: 1px solid black;
 }
 .btn
 {
-    padding: 15px 30px 15px 30px;
-    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(192, 214, 214);
+    color: black;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.btn1
+{
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin-top: 5px;
     text-align: center;
     background-color: aqua;
     color: black;
-    margin: 5px 200px 5px 200px;
-    
+    margin-left: 600px;
+
+}
+.flex
+{
+    display: flex;
+}
+.quotionlist
+{
+    width: 62%;
+    height: 120px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px 0px 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.infocolor
+{
+    width: 16%;
+    height: 120px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkboxes
+{
+    display: flex;
+}
+.check
+{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin: 5px;
+}
+.check1
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(31, 236, 45);
+    margin: 5px;
+}
+.submit
+{
+    width: 20%;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px 0px 5px 400px;
 }
 .vediotag
 {

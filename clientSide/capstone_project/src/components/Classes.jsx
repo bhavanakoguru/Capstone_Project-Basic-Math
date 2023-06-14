@@ -35,28 +35,63 @@ function DisplayClasses()
             </div>
             <div className="rightsidepart">
                     <div className="topics">
-                        <h3>Topic-1:<b>Real Numbers</b></h3>
-                        <h3><u>Sub Topics:</u></h3>
+                        <h3 className="heads" >Topic-1:<b><a href="https://docs.google.com/document/d/18d15DKJ_9amUmN41474PhzWTMvV4HV5gzjYypyP7Ww4/edit?usp=sharing">Real Numbers</a></b></h3>
+                        <h3 className="heads"><u>Sub Topics:</u></h3>
                         <div className="subtopics">
-                            <u>1.Real Numbers Important Definition</u><br></br><br></br>
-                            <u>2.Euclid's Division Lemma</u><br></br><br></br>
-                            <u>3.Proof of Euclid's Division Lemma</u><br></br><br></br>
-                            <u>4.HCF (Highest common factor)</u><br></br><br></br>
-                            <u>5.What is Prime Numbers</u><br></br><br></br>
-                            <u>6.What is Composite Numbers</u><br></br><br></br>
-                            <u>7.Fundamental Theorem of Arithmetic</u><br></br><br></br>
-                            <u>8.HCF and LCM by prime factorization method</u><br></br><br></br>
-                            <u>9.Irrational Numbers</u><br></br><br></br>
-                            <u>10.How to prove the irrational numbers or Rational numbers</u><br></br>
+                            <a href="link">1.Real Numbers Important Definition</a><br></br><br></br>
+                            <a href="link">2.Euclid's Division Lemma</a><br></br><br></br>
+                            <a href="link">3.Proof of Euclid's Division Lemma</a><br></br><br></br>
+                            <a href="link">4.HCF (Highest common factor)</a><br></br><br></br>
+                            <a href="link">5.What is Prime Numbers</a><br></br><br></br>
+                            <a href="link">6.What is Composite Numbers</a><br></br><br></br>
+                            <a href="link">7.Fundamental Theorem of Arithmetic</a><br></br><br></br>
+                            <a href="link">8.HCF and LCM by prime factorization method</a><br></br><br></br>
+                            <a href="link">9.Irrational Numbers</a><br></br><br></br>
+                            <a href="link">10.How to prove the irrational numbers or Rational numbers</a><br></br>
                         </div>
                     </div>
                     <div>
-                        <h2><u><b>Befoure attempting Exam check your Knowledge here:</b></u></h2>
+                        <h2 className="heads"><u><b>Befoure attending class check your Knowledge here:</b></u></h2>
                         <div className="pre-text">
                             <div className="firsttext">
                             </div>
                             <button className="btn">Pre</button>
-                            <button className="btn">Next</button>
+                            <button className="btn1">Next</button>
+                            <div className="flex">
+                                <div className="quotionlist">
+                                    <button className="box1">1</button>
+                                    <button className="box1">2</button>
+                                    <button className="box1">3</button>
+                                    <button className="box1">4</button>
+                                    <button className="box1">5</button>
+                                    <button className="box1">6</button>
+                                    <button className="box1">7</button>
+                                    <button className="box1">8</button>
+                                    <button className="box1">9</button>
+                                    <button className="box1">10</button>
+                                    <button className="box1">11</button>
+                                    <button className="box1">12</button>
+                                    <button className="box1">13</button>
+                                    <button className="box1">14</button>
+                                    <button className="box1">15</button>
+                                    <button className="box1">16</button>
+                                    <button className="box1">17</button>
+                                    <button className="box1">18</button>
+                                    <button className="box1">19</button>
+                                    <button className="box1">20</button>
+                                </div>
+                                <div className="infocolor">
+                                    <div className="checkboxes">
+                                        <div className="check"></div>
+                                        <p>pending</p>
+                                    </div><br></br>
+                                    <div className="checkboxes">
+                                        <div className="check1"></div>
+                                        <p>Submitted</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button className="submit">Submit</button>
                         </div>
                     </div>
                     <div>
@@ -65,14 +100,48 @@ function DisplayClasses()
                         </video>
                     </div>
                     <div>
-                        <h2><u>Attempt the exam Now:</u></h2>
-                        <div className="post-text">
+                        <h2 className="heads"><u><b>Attempt the exam now:</b></u></h2>
+                        <div className="pre-text">
                             <div className="firsttext">
                             </div>
                             <button className="btn">Pre</button>
-                            <button className="btn">Next</button>
-                        <div>
-                    </div>
+                            <button className="btn1">Next</button>
+                            <div className="flex">
+                                <div className="quotionlist">
+                                    <button className="box1">1</button>
+                                    <button className="box1">2</button>
+                                    <button className="box1">3</button>
+                                    <button className="box1">4</button>
+                                    <button className="box1">5</button>
+                                    <button className="box1">6</button>
+                                    <button className="box1">7</button>
+                                    <button className="box1">8</button>
+                                    <button className="box1">9</button>
+                                    <button className="box1">10</button>
+                                    <button className="box1">11</button>
+                                    <button className="box1">12</button>
+                                    <button className="box1">13</button>
+                                    <button className="box1">14</button>
+                                    <button className="box1">15</button>
+                                    <button className="box1">16</button>
+                                    <button className="box1">17</button>
+                                    <button className="box1">18</button>
+                                    <button className="box1">19</button>
+                                    <button className="box1">20</button>
+                                </div>
+                                <div className="infocolor">
+                                    <div className="checkboxes">
+                                        <div className="check"></div>
+                                        <p>pending</p>
+                                    </div><br></br>
+                                    <div className="checkboxes">
+                                        <div className="check1"></div>
+                                        <p>Submitted</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button className="submit">Submit</button>
                         </div>
                     </div>
                     {/* <iframe src="index.html" height="950px" width="80%" title="Iframe Example" allowFullScreen></iframe> */}
