@@ -16,6 +16,9 @@ function Displayhome()
                 </div>
             </nav>
             <div className="homeimage">
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <p className="textinhome">Mathematics consists of proving the most obvious <br></br>thing in the least obvious way. ...</p>
+                <button className="certifybtn">Get Certificate</button>
             </div>
             <div className="secondpartinthehomepage">
                 <h1 >Be patient with yourself, embrace challenges as opportunities for growth, and enjoy the journey of acquiring new knowledge and skills.</h1>

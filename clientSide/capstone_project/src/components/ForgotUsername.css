@@ -4,7 +4,8 @@
 }
 .top
 {
-    background-image:url("../../public/resources/Math1.jpg");
+    /* background-image:url("../../public/resources/Math1.jpg"); */
+    background-image:url("../../public/resources/Group1.png");
     background-repeat: no-repeat;
     background-size: cover; 
     height: 750px; 

@@ -50,17 +50,23 @@ function DisplayForgot({forgotpassword, setForgotpassword,islogin, setIslogin})
 			}
 		}
     return (
-         <div className="top">
-        <div className="maindiv">
-            <div className="maininput">
-                <h3 className="signuptext">Forgot password</h3><br />
-                <input type={"password"} value={newpassword} className="inputwidth" placeholder="New Password" onChange={e => setNewpassword(e.target.value)}></input><br /><br />
-                <input type={"password"} value={confirmpassword} className="inputwidth" placeholder="Confirm Password" onChange={e => setConfirmpassword(e.target.value)}></input><br /><br />
-                <button className="inputwidth gomid" onClick={clickMe}>Submit</button><br />
+		<div className="top">
+            <div className="inputbox">
+                <div id="maininput" className="main">
+					<h3 className="signuptext">Forgot password</h3><br />
+					<input type={"password"} value={newpassword} className="inputwidth" placeholder="New Password" onChange={e => setNewpassword(e.target.value)}></input><br /><br />
+					<input type={"password"} value={confirmpassword} className="inputwidth" placeholder="Confirm Password" onChange={e => setConfirmpassword(e.target.value)}></input><br /><br />
+					<button className="submit" onClick={clickMe}>Submit</button><br /><br></br>
+                </div>
             </div>
-        </div>
-                <p id="lasttext">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
+            <p className="lastcontent">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
         </div>
     );
 }
 export default DisplayForgot;
+
+
+/*<h3 className="signuptext">Forgot password</h3><br />
+                <input type={"password"} value={newpassword} className="inputwidth" placeholder="New Password" onChange={e => setNewpassword(e.target.value)}></input><br /><br />
+                <input type={"password"} value={confirmpassword} className="inputwidth" placeholder="Confirm Password" onChange={e => setConfirmpassword(e.target.value)}></input><br /><br />
+                <button className="inputwidth gomid" onClick={clickMe}>Submit</button><br /> */

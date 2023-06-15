@@ -38,21 +38,29 @@ function DisplaySignin({setHomepage,islogin,setIslogin,setForgotpassword,setForg
         setForgotusername(true);
     }
     return (
-    <div className="supertop">
-    <div className="top">
-    <div className="maindiv">
-        <div className="maininput">
-            <h3 className="signuptext">Signin page</h3><br />
-            <input type={"text"} className="inputwidth user" placeholder="User Name" onChange={e => setUsername(e.target.value)}></input><br /><br />
+        <div className="top">
+            <div className="inputbox">
+                <div id="maininput">
+                <h3 className="signuptext">Sign in</h3>
+                <input type={"text"} className="inputwidth user" placeholder="User Name" onChange={e => setUsername(e.target.value)}></input><br /><br />
+                <input type={"password"} className="inputwidth password" placeholder="Password" onChange={e => setPassword(e.target.value)}></input><br /><br />
+                <span onClick={handleForgotClick} className="forgotpassword">forgot Password</span><br></br><br></br>
+                <button className="submit" onClick={clickMe}>Submit</button><br />
+                <p className="Accounthave">if don't have an Account?<span onClick={handleSignupClick}><b className="boldsignin">Sign up</b></span></p>
+                {/* <span onClick={handleForgotClick}>forgot Password</span> */}
+                <span onClick={handleForgotUserClick}></span>
+                </div>
+            </div>
+            <p className="lastcontent">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
+        </div>
+    );
+}
+export default DisplaySignin;
+
+
+/*            <input type={"text"} className="inputwidth user" placeholder="User Name" onChange={e => setUsername(e.target.value)}></input><br /><br />
             <input type={"password"} className="inputwidth password" placeholder="Password" onChange={e => setPassword(e.target.value)}></input><br /><br />
             <button className="inputwidth gomid" onClick={clickMe}>Submit</button><br />
             <p>if don't have an Account?<span onClick={handleSignupClick}><u>Signup</u></span></p>
              <p>*<span onClick={handleForgotClick}>ForgotPassword</span></p>
-             <p>*<span onClick={handleForgotUserClick}>ForgotUserName</span></p>  
-        </div>
-    </div>
-            <p id="lasttext">© 2023 by Mathematics Privacy Policy & Terms and Conditions</p>
-    </div>
-    </div> );
-}
-export default DisplaySignin;
+             <p>*<span onClick={handleForgotUserClick}>ForgotUserName</span></p>   */

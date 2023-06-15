@@ -16,7 +16,9 @@ function DisplayExam()
         </nav>
         <br></br><br></br><br></br><br></br><br></br>
        {/* .............ExamPage............ */}
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6nclWxZHvFqkleMggz9m6wsVQCGErdEiCg&usqp=CAU" className="examimage" alt="Examimage" />
+       <div className="background">
+
+       </div>
         <div className="instructions">
             <h1><u>INSTRUCTIONS</u></h1>
             <p>1.You must use a functioning webcam and microphone.</p>
