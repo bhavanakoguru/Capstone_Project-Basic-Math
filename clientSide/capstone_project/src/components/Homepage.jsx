@@ -10,25 +10,41 @@ function Displayhome()
                 <img src={"/resources/educateLogo.png"} alt="logo" className="logo"/>
                 <div class="divtag">
                     <h1>View Meterial</h1>
+                    <h1>Topics</h1>
                     <h1>Classes</h1>
                     <h1>Exams </h1>
-                    <h1>Signup</h1>
+                    <h1>Logout</h1>
                 </div>
             </nav>
             <div className="homeimage">
-                <br></br><br></br><br></br><br></br><br></br><br></br>
-                <p className="textinhome">Mathematics consists of proving the most obvious <br></br>thing in the least obvious way. ...</p>
-                <button className="certifybtn">Get Certificate</button>
+                <br></br><br></br><br></br>
+                <p style={{color: "white"}}>Welcome To Joy Learning</p>
+                <p className="textinhome">Learn <span className="heighletext">Mathematics</span> With Joy</p>
+                <p className="textinhome1">Guides,books,lessons and online resources<br></br>
+                for heigher math Learners</p>
+                <button className="certifybtn">Learn More</button>
+            </div>
+            <div className="mathsimpo">
+                <div>
+                    <video className="vediotag0" controls>
+                        <source src={"mathsignuplogo.mp4"} type="video/mp4"></source>
+                    </video>                
+                    {/* <img src="APSCERT" alt="" /> */}
+                </div>
+                <div className="mathsimpotext">
+                    <p >Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.<p className="starts">*********</p>Mathematics is not only real,but it is the only reality.</p><br></br>
+                    <button className="certifybtn1">Learn More</button>
+                </div>
             </div>
             <div className="secondpartinthehomepage">
-                <h1 >Be patient with yourself, embrace challenges as opportunities for growth, and enjoy the journey of acquiring new knowledge and skills.</h1>
+                <h3>Improve your Mathematical learningskills here is the ways to enrich your Mathematical life</h3>
                 <p className="paratext">When you love learning,<br /> you will naturally find joy in every step of the process.</p>
             </div>
             <div className="middletopbox">
                 <div className="topicsinfo">
                     <img src="/resources/meterialimage.png" alt="meterial" className="program program2"/>
                     <h3>Conceptual Understanding</h3>
-                    <p>Here present information in a structured manner, guiding learners through the logical progression of topics.</p>
+                    <p>Here present information in a structured <br></br>manner, guiding learners through the logical<br></br> progression of topics.</p>
                 
                 </div>
                 <div className="topicsinfo">
@@ -37,7 +53,7 @@ function Displayhome()
                     <p>Teaching methods can enhance understanding by presenting mathematical concepts from different angles and providing visual representations that aid comprehension.</p>
                 </div>
                 <div className="topicsinfo">
-                    <img src="/resources/examimage.webp" alt="exams" className="program"/>
+                    <img src="/resources/examimage.webp" alt="exams" className="program program3"/>
                     <h3>Your Strengths&Weaknesses</h3>
                     <p>Maths exams help identify individual strengths and weaknesses in mathematical abilities.</p>
                 </div>
@@ -90,3 +106,5 @@ function Displayhome()
     )
 }
 export default Displayhome;
+
+/*https://mathvault.ca/wp-content/uploads/Network-Icon.png?x30583 */
