@@ -18,7 +18,6 @@ function Displayhome()
             </nav>
             <div className="homeimage">
                 <br></br><br></br><br></br>
-                <p style={{color: "white"}}>Welcome To Joy Learning</p>
                 <p className="textinhome">Learn <span className="heighletext">Mathematics</span> With Joy</p>
                 <p className="textinhome1">Guides,books,lessons and online resources<br></br>
                 for heigher math Learners</p>
@@ -26,13 +25,14 @@ function Displayhome()
             </div>
             <div className="mathsimpo">
                 <div>
-                    <video className="vediotag0" controls>
+                    {/* <video className="vediotag0" controls>
                         <source src={"mathsignuplogo.mp4"} type="video/mp4"></source>
-                    </video>                
-                    {/* <img src="APSCERT" alt="" /> */}
+                    </video>                 */}
+                    <img src="/resources/srinivasaramanjun.webp" alt="srinivasan" className="srinivasan"/>
                 </div>
                 <div className="mathsimpotext">
-                    <p >Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.<p className="starts">*********</p>Mathematics is not only real,but it is the only reality.</p><br></br>
+                    <p >Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.</p>
+                    <p className="mathsquote">Mathematics is not only real,but it is the only reality.</p><br></br>
                     <button className="certifybtn1">Learn More</button>
                 </div>
             </div>

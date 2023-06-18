@@ -70,10 +70,19 @@
 {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(14, 14, 71);
 }
 .vediotag0
 {
     width: 700px;
+}
+.srinivasan
+{
+    margin: auto;
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    margin: 0px 150px;
 }
 .mathsimpotext
 {
@@ -84,8 +93,19 @@
     height: 95%;
     border-radius: 25px;
     padding-bottom: 50px;
+    color: aliceblue;
+    /* opacity: 0.6; */
     /* background-color: rgb(46, 46, 124); */
     
+}
+.mathsquote:hover
+{
+    border-radius: 5px;
+    border:1px solid rgb(216, 11, 234);
+    background-color: aqua;
+    padding: 10px;
+    color:deeppink;
+    margin: 0px 50px;
 }
 .certifybtn1
 {
@@ -93,15 +113,22 @@
     margin-left: 35px;
     margin-top: 0px;
     border-radius: 10px;
-    background-color: rgb(217, 217, 239);
-    color: rgb(18, 17, 17);
+    background-color: rgb(16, 16, 21);
+    color: rgb(227, 224, 224);
     padding: 20px;
     font-size: 20px;
+    border: 1px solid deeppink;
+    
+}
+.certifybtn1:hover
+{
+    background-color: deeppink;
+    color: black;
 }
 .mathsimpotext:hover
 {
     font-stretch: narrower;
-    color: rgb(15, 12, 65);
+    /* color: rgb(253, 5, 249); */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .starts:hover

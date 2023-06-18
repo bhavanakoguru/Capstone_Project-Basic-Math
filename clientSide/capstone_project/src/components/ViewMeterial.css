@@ -86,17 +86,37 @@ footer
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    margin-left: 60px;
 }
 .image
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     margin: 30px;
     width: 250px;
     height: 200px;
 }
 .subimg
 {
-    border:1px solid black;
+    /* border:1px solid black; */
+    border-radius: 10px;
     text-align: center;
     margin: 10px;
+    /* background-color: aqua;*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+a
+{
+    color: aliceblue;
+}
+.subimg:hover
+{
+    background-color: rgb(5, 32, 76);
+    color: aliceblue;
+}
+a:hover
+{
+    background-color: deeppink;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
