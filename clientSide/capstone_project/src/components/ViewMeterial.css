@@ -88,35 +88,63 @@ footer
     margin: 20px;
     margin-left: 60px;
 }
-.image
-{
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    margin: 30px;
-    width: 250px;
-    height: 200px;
-}
 .subimg
 {
-    /* border:1px solid black; */
+    margin-top: 25px;
+}
+.image
+{
+    margin-top: 200px;
+    margin: 30px;
+    width: 350px;
+    height: 300px;
+}
+.unit
+{
+    display: flex;
+    background-image: url(../../public/resources/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    /* background-color: aqua;*/
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} 
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.subimagedata
+{
+   
+    margin: 20px 10px 10px 0px;
+    width: 900px;
+    padding: 50px;
+    font-weight: normal;
+}
+.subimagedata>p
+{
+    font-size: large;
+    font-weight: lighter;
+}
+.certifybtn
+{
+    border: 1px solid rgb(115, 176, 202);
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: 	#eceef2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+}
 a
 {
-    color: aliceblue;
+    color: black;
+    text-decoration: none;
 }
-.subimg:hover
-{
-    background-color: rgb(5, 32, 76);
-    color: aliceblue;
-}
-a:hover
+.certifybtn:hover
 {
     background-color: deeppink;
-    padding: 10px 15px;
-    border-radius: 5px;
+    color: black;
+}
+.mainclass
+{
+ background-color: black;
 }

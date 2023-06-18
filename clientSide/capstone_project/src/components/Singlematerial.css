@@ -2,3 +2,8 @@
 {
     margin-left: 100px;
 }
+pre
+{
+    display: flex;
+    flex-wrap: wrap;
+}
