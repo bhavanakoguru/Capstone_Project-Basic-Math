@@ -1,0 +1,102 @@
+.nav{
+   width:100px;
+   height: 1100px;
+   background-color: rgb(237, 229, 229);
+   border-right:1px solid black;
+}
+.logo
+{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+.top
+{
+   width:1380px;
+   height: 250px;
+   display: flex;
+   border-bottom: 1px solid black;
+   background-color: rgb(107, 107, 131);
+}
+.main
+{
+    display: flex;
+}
+#mainhead
+{
+    margin: 50px;
+    color: aliceblue;
+}
+#mainpara
+{
+    margin: 50px;
+    color: aliceblue;
+}
+.mid
+{
+   width:300px;
+   height: 700px;
+   border: 1px solid rgb(11, 10, 10);
+   border-right:1px solid black ;
+}
+/* .courseinfo
+{
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin: 30px;
+    text-align: center;
+    
+} */
+.livebook
+{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.divs
+{
+    border: 1px solid black;
+}
+/* .livebookhero
+{
+    margin-top: 50px;
+    margin-left: 200px;
+} */
+
+.livebookheo
+{
+    margin-left: 50px;
+}
+.course
+{
+    font-size: 20px;
+    background-color: rgb(228, 217, 217);
+    border: 1px solid rgb(213, 197, 197);
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin: 30px;
+    text-align: center;
+
+}
+.course:hover
+{
+    background-color: rgb(183, 58, 58);
+}
+.displaycontent
+{
+    display: flex;
+}
+.units
+{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 10;
+    border: 1px solid black;
+}
+.unitInfo
+{
+    border: 1px solid black;
+}
