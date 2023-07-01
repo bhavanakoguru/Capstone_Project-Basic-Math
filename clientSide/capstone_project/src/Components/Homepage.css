@@ -1,3 +1,4 @@
+/***********NAV**********/
 .nav{
    width:100px;
    height: 1100px;
@@ -12,10 +13,12 @@
     margin-top: 20px;
     
 }
+/*********right first box in right side********/
 .top
 {
-   width:1380px;
-   height: 250px;
+   /* width:1345px; */
+   /* height: 200px; */
+   /* padding: 5px; */
    display: flex;
    border-bottom: 1px solid black;
    background-color: rgb(107, 107, 131);
@@ -26,12 +29,13 @@
 }
 #mainhead
 {
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
     color: aliceblue;
 }
 #mainpara
 {
-    margin: 50px;
+    margin-left: 50px;
     color: aliceblue;
 }
 .mid
@@ -41,14 +45,6 @@
    border: 1px solid rgb(11, 10, 10);
    border-right:1px solid black ;
 }
-/* .courseinfo
-{
-    padding: 15px 30px;
-    margin-top: 10px;
-    margin: 30px;
-    text-align: center;
-    
-} */
 .livebook
 {
     width: 80px;
@@ -60,26 +56,19 @@
 {
     border: 1px solid black;
 }
-/* .livebookhero
+.Livebookhero
 {
-    margin-top: 50px;
     margin-left: 200px;
-} */
-
-.livebookheo
-{
-    margin-left: 50px;
 }
 .course
 {
     font-size: 20px;
     background-color: rgb(228, 217, 217);
     border: 1px solid rgb(213, 197, 197);
-    padding: 15px 30px;
+    padding: 15px 0px 15px 10px;
     margin-top: 10px;
     margin: 30px;
-    text-align: center;
-
+    width: 200px;
 }
 .course:hover
 {
@@ -89,14 +78,83 @@
 {
     display: flex;
 }
+.mid
+{
+   height: 725px;
+}
+.combo
+{
+    border-bottom: 2px solid black;
+    /* display: flex; */
+}
+
 .units
 {
-    margin-left: 30px;
-    font-size: 25px;
-    font-weight: 10;
+    display: flex;
+    width: 1000px;
+    /* padding-right: 310px; */
+}
+.a
+{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 3px;
+}
+.b
+{
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
     border: 1px solid black;
 }
-.unitInfo
+.b:hover
 {
+    color: red;
+}
+.c
+{
+    font-weight: 500;
+    width: 600px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 5px;
+}
+.c:hover
+{
+    color: red;
+}
+.dropdown
+{
+    position: absolute;
+    right: 50px;
+}
+.unitsborder
+{
+    margin-left: 40px;
+    border: 2px solid black;
+    background-color: rgb(228, 217, 217);
+}
+.Subunits
+{
+    display: flex;
+    margin: 5px;
+}
+.circle
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
     border: 1px solid black;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.fontweight
+{
+    font-weight: 1;
+    margin-left: 100px;
 }
