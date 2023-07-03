@@ -1,40 +1,13 @@
 import React, { useState } from "react";
-import "./Homepage.css";
+import "./HomepageData.css";
 
 function ExecuteHomePage() {
     const [course, setCourse] = useState([]);
     const [units, setUnits] = useState([]);
     const [Subunits, setSubunits] = useState([]);
-    const [SubunitsInfo, SetSubunitsInfo] = useState([]);
-    //const [open, setOpen] = useState(false);
-    //const [isSelected, setIsSelected] = useState(-1);
-    //const [active,setActive] = useState(false);
-
-    // const toggleDropdown = () => {
-    //     setActive(!active)
-    // }
-
-    // const handleClick = (i) => {
-    //     setIsSelected(i)
-    // }
-
-    // const renderOptions = () => {
-    //     if (!this.props.options) {
-    //         return;
-    //     }
-
-    //     return this.props.options.map((option, i) => {
-    //         return (
-    //             <li
-    //                 onClick={evt => this.handleClick(i)}
-    //                 key={i}
-    //                 className={"dropdown__list-item " + (i === this.state.selected ? 'dropdown__list-item--active' : '')}
-    //             >
-    //                 {option}
-    //             </li>
-    //         );
-    //     });
-    // }
+    const [subTopicInfo,setSubTopicInfo]=useState([]);
+    const [isClicked, setIsClicked] = useState(false);
+    const [clickOnSubunitsInfo, SetClickOnSubunitsInfo] = useState([]);
 
     function Go() {
         fetch(`http://localhost:5000/course`)
@@ -42,7 +15,6 @@ function ExecuteHomePage() {
             .then(data => {
                 console.log(data)
                 setCourse(data)
-                //course.append(data[i].course_Name);
             })
     }
     function Click() 
@@ -54,22 +26,28 @@ function ExecuteHomePage() {
             })
     }
     function ClickMe() {
-        console.log("start");
-        fetch(`http://localhost:5000/Subunits`)
-            .then(response => response.json())
-            .then(subunitdata => {
-                console.log(subunitdata)
-                // SetSubunits(subunitdata)
-            })
+        setIsClicked(!isClicked);
+        if(isClicked){
+            fetch(`http://localhost:5000/Subunits`)
+                .then(response => response.json())
+                .then(subunitdata => {
+                    console.log(subunitdata)
+                    setSubunits(subunitdata)
+                })
+        }
     }
     function ClickOnce(){
         console.log("start");
+        SetClickOnSubunitsInfo(!clickOnSubunitsInfo);
+        if(clickOnSubunitsInfo){
         fetch(`http://localhost:5000/Subunits`)
             .then(response => response.json())
             .then(subunitcontent => {
-                console.log(subunitcontent)
-                SetSubunitsInfo(subunitcontent)
+                // console.log(subunitcontent)
+                setSubTopicInfo(subunitcontent)
             })
+
+        }
     }
     return (
         <div>
@@ -104,27 +82,37 @@ function ExecuteHomePage() {
                         </div>
                         <div className="unitsborder">
                             {
-                                units.map(({ unit_Name,Unit_Content }) =>
-                                    <div className="combo">
-                                        <div className='units'>
+                                units.map(({ unit_Name}) =>
+                                    <div>
+                                        <div className='units' onClick={() => ClickMe()}>
                                             <div className="rambus">
                                                 <img src="/resources/rambusimg.png" alt="" className="a" />
                                             </div>
                                             <div className="text">
-                                                <h2 className="c" onClick={() => ClickMe()}>
+                                                <div className="c" >
                                                     {unit_Name}
-                                                    {/* <p>{Unit_Content}</p><br></br> */}
-                                                    {/* <div className="unitInfo">
+                                                    {
+                                                    isClicked ? 
+                                                    <div>
                                                         {
-                                                            Subunits.map(({ subUnit_Name, subUnit_Content }) => <div>
+                                                            Subunits.map(({ subUnit_Name,subUnit_Content}) => <div>
                                                                 <div className='Subunits' >
-                                                                    <div className="circle"></div><p>{subUnit_Name}</p>
+                                                                    <div className="circle" onClick={ClickOnce}></div><p>{subUnit_Name}
+                                                                    {
+                                                                    clickOnSubunitsInfo ?
+                                                                        <div>
+                                                                                {/* Subunits.map((subUnit_Content)) */}
+                                                                              {  <p className="fontweight">{subUnit_Content}</p> }
+                                                                        </div>:""
+                                                                    }
+                                                                    </p>
                                                                 </div>
-                                                                <p className="fontweight">{subUnit_Content}</p>
+                                                                {/* <p className="fontweight">{subUnit_Content}</p>  */}
                                                             </div>)
                                                         }
-                                                    </div> */}
-                                                </h2>
+                                                    </div> : ""
+                                                    }
+                                                </div>
                                             </div>
                                             <div className="dropdown">
                                                 <img src="/resources/downarrow.png" alt="" className="b" />
@@ -133,38 +121,7 @@ function ExecuteHomePage() {
                                     </div>)
                             }
                         </div>
-                        {/* <div className="unitInfo">
-                            {
-                                Subunits.map(({ subUnit_Name, subUnit_Content }) => <div>
-                                    <h1 className='Subunits' >
-                                        {subUnit_Name}
-                                       
-                                    </h1>
-                                </div>)
-                            }
-                        </div> */}
                     </div>
-                    <div className="unitInfo">
-                            {
-                                Subunits.map(({ subUnit_Name, subUnit_Content }) => <div>
-                                    <div className='Subunits' >
-                                        <div className="circle"></div><p>{subUnit_Name}</p>
-                                    </div>
-                                    {/* <p className="fontweight">{subUnit_Content}</p> */}
-                                </div>)
-                            }
-                    </div>
-                    <div className="subtopicInfo">
-                            {
-                                SubunitsInfo.map(({subUnit_Content }) => <div>
-                                    <div className='SubunitsInfo' >
-                                        <div className="circle"></div><p>{subUnit_Content}</p>
-                                    </div>
-                                    
-                                </div>)
-                            }
-                    </div>
-                    
                 </div>
             </div>
         </div>
