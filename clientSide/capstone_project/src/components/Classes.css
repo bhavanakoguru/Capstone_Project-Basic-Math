@@ -89,17 +89,23 @@ footer
 .leftsidepart
 {
     width: 450px;
-    height: 990px;
+    height: 1090px;
     border: 1px solid black;
 }
 .unitbox
 {
     margin-bottom: 5px;
     padding: 3px;
-    background-color: rgb(43, 47, 47);
-    color: white;
+    background-color: rgb(40, 41, 50);
+    /* box-shadow: rgba(7, 7, 7, 0.2) 0px 7px 29px 0px; */
+    color: rgb(247, 245, 245);
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
+}
+.unitbox:hover
+{
+    background-color: aqua;
+    color:black
 }
 .rightsidepart
 {
