@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #course
+        {
+            margin: 50px 0px 0px 15px;
+            padding: 0px 10px;
+        }
+        #units{
+            padding-left: 50px ;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="go()">open</button>
+    <div id="course">
+        
+    </div>
+    <div id="units">
+
+    </div>
+    <div id="subUnits">
+
+    </div>
+    <script>
+        var course=document.getElementById("course");
+        var units=document.getElementById("units");
+        var subUnits=document.getElementById("subUnits");
+        
+        function go()
+        {
+            console.log("start")
+            fetch(`http://localhost:5000/course`)
+            .then(response=>response.json())
+            .then(data =>{
+               for(let i=0;i<data.length;i++)
+               {
+                    console.log(data[i]);
+                    course.append(data[i].course_Name);
+               }
+
+            })
+            fetch(`http://localhost:5000/units`)
+            .then(response=>response.json())
+            .then(data =>{
+                console.log(data);
+                const allUnits = document.createElement("ul")
+                for(let i=0;i<data.length;i++)
+               {
+                    console.log(data[i]);
+                    const ls = document.createElement("li")
+                    ls.innerHTML = data[i].unit_Name;
+                    // const x=document.createElement("video");
+                    //x.setAttribute("src",data[i].Unit_video);
+                    //x.setAttribute("controls", "controls");
+                    allUnits.append(ls);
+
+               }
+
+                units.append(allUnits)
+            })
+            fetch(`http://localhost:5000/subUnits`)
+            .then(response=>response.json())
+            .then(data =>{
+                console.log(data);
+                for(let i=0; i<data.length; i++){
+                    const block = document.createElement("div");
+                    const heading = document.createElement("h3");
+                    heading.innerHTML=data[i].subUnit_Name;
+                    const content = document.createElement("p")
+                    content.innerHTML = data[i].subUnit_Content;
+
+                    block.append(heading, content);
+                    subUnits.append(block);
+                }
+            })
+            
+        }
+    </script>
+</body>
+</html>
