@@ -1,0 +1,53 @@
+
+.leftsidepart
+{
+    width: 450px;
+    border: 1px solid black;
+}
+.unitbox
+{
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: rgb(43, 47, 47);
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+.rightsidepart
+{
+    margin: 5px;
+    width: 100%;
+    border: 2px solid rgb(17, 15, 16);
+}
+.subtopics
+{
+    margin-left: 100px;
+}
+.firsttext
+{
+    /* margin-left: 50px; */
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+.btn
+{
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    margin: 5px 200px 5px 200px;
+    
+}
+.vediotag
+{
+    margin-left: 50px;
+    width: 1000px;
+}
+.iframe
+{
+    width: 90%;
+    margin: auto;
+}

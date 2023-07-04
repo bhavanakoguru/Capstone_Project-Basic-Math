@@ -1,0 +1,152 @@
+/***********NAV**********/
+.nav{
+   width:100px;
+   height: 1100px;
+   background-color: rgb(237, 229, 229);
+   border-right:1px solid black;
+}
+.logo
+{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+/*********right first box in right side********/
+.top
+{
+   width:1345px; 
+   height: 200px; 
+   padding: 5px;
+   display: flex;
+   border-bottom: 1px solid black;
+   background-color: rgb(17, 17, 106);
+}
+.main
+{
+    display: flex;
+}
+#mainhead
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    color: aliceblue;
+}
+#mainpara
+{
+    margin-left: 50px;
+    color: aliceblue;
+}
+.mid
+{
+   width:300px;
+   height: 725px;
+}
+.livebook
+{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.divs
+{
+    border: 1px solid black;
+}
+.Livebookhero
+{
+    margin-left: 200px;
+}
+.courseinfo
+{
+    border-right:2px solid black ;
+}
+.course
+{
+    font-size: 20px;
+    background-color: rgb(228, 217, 217);
+    border: 1px solid rgb(213, 197, 197);
+    padding: 15px 0px 15px 10px;
+    margin: 30px;
+    width: 200px;
+}
+.course:hover
+{
+    background-color: rgb(228, 9, 104);
+}
+.displaycontent
+{
+    display: flex;
+}
+.units
+{
+    display: flex;
+    width: 1000px;
+    border: 2px solid black;
+}
+.a
+{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 3px;
+}
+.b
+{
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.b:hover
+{
+    color:  rgb(228, 9, 104);
+}
+.c
+{
+    font-weight: 500;
+    width: 600px;
+    min-height: 10px;
+    max-height: 1000px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 5px;
+}
+.c:hover
+{
+    color:rgb(17, 16, 17);
+}
+.dropdown
+{
+    position: absolute;
+    right: 50px;
+}
+.unitsborder
+{
+    margin-left: 40px;
+    background-color: rgb(228, 217, 217);
+}
+.Subunits
+{
+    display: flex;
+    margin: 5px;
+}
+.circle
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.fontweight
+{
+    font-weight: 1;
+    margin-left: 100px;
+}
