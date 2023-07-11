@@ -10,7 +10,7 @@ function ExecuteHomePage() {
     const [clickOnSubunitsInfo, SetClickOnSubunitsInfo] = useState([]);
 
     function Go() {
-        fetch(`http://localhost:5000/course`)
+        fetch(`http://localhost:5050/course`)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -19,7 +19,7 @@ function ExecuteHomePage() {
     }
     function Click() 
     {
-        fetch(`http://localhost:5000/units`)
+        fetch(`http://localhost:5050/units`)
             .then(response => response.json())
             .then(unitdata => {
                 setUnits(unitdata)
@@ -28,7 +28,7 @@ function ExecuteHomePage() {
     function ClickMe() {
         setIsClicked(!isClicked);
         if(isClicked){
-            fetch(`http://localhost:5000/Subunits`)
+            fetch(`http://localhost:5050/Subunits`)
                 .then(response => response.json())
                 .then(subunitdata => {
                     console.log(subunitdata)
@@ -40,7 +40,7 @@ function ExecuteHomePage() {
         console.log("start");
         SetClickOnSubunitsInfo(!clickOnSubunitsInfo);
         if(clickOnSubunitsInfo){
-        fetch(`http://localhost:5000/Subunits`)
+        fetch(`http://localhost:5050/Subunits`)
             .then(response => response.json())
             .then(subunitcontent => {
                 // console.log(subunitcontent)
@@ -62,7 +62,7 @@ function ExecuteHomePage() {
                     <div className="top">
                         <div>
                             <h1 id="mainhead">Learn the ways of the future</h1>
-                            <p id="mainpara">With Kalvium, learn computer science with a world-class curriculum designed with the best CXOs of the tech world.</p>
+                            <p id="mainpara">Improve your <span className="maths">Mathematical learningskills</span> here is the ways to enrich your Mathematical life</p>
                         </div>
                         <div>
                             <img src="/resources/livebooksheroimgkalvium.svg" alt="image1" className="Livebookhero" />
@@ -83,42 +83,39 @@ function ExecuteHomePage() {
                         <div className="unitsborder">
                             {
                                 units.map(({ unit_Name}) =>
-                                    <div>
-                                        <div className='units' onClick={() => ClickMe()}>
-                                            <div className="rambus">
-                                                <img src="/resources/rambusimg.png" alt="" className="a" />
-                                            </div>
-                                            <div className="text">
-                                                <div className="c" >
-                                                    {unit_Name}
-                                                    {
-                                                    isClicked ? 
+                                <div>
+                                    <div className='units' onClick={() => ClickMe()}>
+                                        <div className="rambus">
+                                            <img src="/resources/rambusimg.png" alt="" className="a" />
+                                        </div>
+                                        <div className="text">
+                                            <div className="c" >
+                                                {unit_Name}
+                                                {
+                                                isClicked ? 
                                                     <div>
                                                         {
                                                             Subunits.map(({ subUnit_Name,subUnit_Content}) => <div>
-                                                                <div className='Subunits' >
-                                                                    <div className="circle" onClick={ClickOnce}></div><p>{subUnit_Name}
-                                                                    {
-                                                                    clickOnSubunitsInfo ?
-                                                                        <div>
-                                                                                {/* Subunits.map((subUnit_Content)) */}
-                                                                              {  <p className="fontweight">{subUnit_Content}</p> }
-                                                                        </div>:""
-                                                                    }
+                                                                <div className='subunits' >
+                                                                    <div className="circle" onClick={ClickOnce}></div>
+                                                                    <p>
+                                                                        {subUnit_Name}
                                                                     </p>
                                                                 </div>
-                                                                {/* <p className="fontweight">{subUnit_Content}</p>  */}
+                                                                <p className="content">{subUnit_Content}  </p> 
+                                                                
                                                             </div>)
                                                         }
                                                     </div> : ""
-                                                    }
-                                                </div>
+                                                }
                                             </div>
-                                            <div className="dropdown">
-                                                <img src="/resources/downarrow.png" alt="" className="b" />
-                                            </div>
+
                                         </div>
-                                    </div>)
+                                        <div className="dropdown">
+                                            <img src="/resources/downarrow.png" alt="" className="b" />
+                                        </div>
+                                    </div>
+                                </div>)
                             }
                         </div>
                     </div>
@@ -129,3 +126,5 @@ function ExecuteHomePage() {
 }
 
 export default ExecuteHomePage;
+
+
