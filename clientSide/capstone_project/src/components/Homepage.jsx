@@ -1,6 +1,7 @@
 //import React,{useState} from "react";
 import React from "react";
 import "./Homepage.css"
+import { Link } from "react-router-dom";
 
 function Displayhome()
 {
@@ -9,9 +10,9 @@ function Displayhome()
             <nav className="navbar">
                 <img src={"/resources/educateLogo.png"} alt="logo" className="logo"/>
                 <div class="divtag">
-                    <h1>View Meterial</h1>
-                    <h1>Topics</h1>
-                    <h1>Classes</h1>
+                    <h1><Link to="/page" className="linkh">View Meterial</Link></h1>
+                    <h1><Link to="/page" className="linkh">Topics</Link></h1>
+                    <h1> <Link to="/pageone" className="linkh">Classes</Link></h1>
                     <h1>Exams </h1>
                     <h1>Logout</h1>
                 </div>
